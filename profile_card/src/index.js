@@ -8,6 +8,7 @@ function App() {
       <ProfilePicture />
       <div>
         <Intro />
+        <Skills />
       </div>
     </div>
   );
@@ -26,6 +27,7 @@ function ProfilePicture() {
 function Intro() {
   return (
     <div>
+      <h1>Bryan Conquer</h1>
       <p>
         I'm Software Engineer Opt at mangaing development life cycle from
         scratch to full production.
@@ -35,7 +37,11 @@ function Intro() {
 }
 
 function Skills() {
-  return <div></div>;
+  return (
+    <div>
+      <ul></ul>
+    </div>
+  );
 }
 
 // function Skills(objData) {}?
