@@ -2,13 +2,44 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 
+const SkillData = [
+  {
+    skill: "MongoDB",
+    emoji: "🛢",
+  },
+  {
+    skill: "Express",
+    emoji: "📲",
+  },
+  {
+    skill: "React",
+    emoji: "🖼",
+  },
+  {
+    skill: "Node.js",
+    emoji: "🛠",
+  },
+  {
+    skill: "Python",
+    emoji: "🐍",
+  },
+  {
+    skill: "JavaScript",
+    emoji: "📡",
+  },
+  {
+    skill: "Smart Contract",
+    emoji: "🎭",
+  },
+];
+
 function App() {
   return (
-    <div>
+    <div className="container">
       <ProfilePicture />
       <div>
         <Intro />
-        <Skills />
+        <SkillList />
       </div>
     </div>
   );
@@ -29,22 +60,34 @@ function Intro() {
     <div>
       <h1>Bryan Conquer</h1>
       <p>
-        I'm Software Engineer Opt at mangaing development life cycle from
+        I'm a Software Engineer Opt at mangaing development life cycle from
         scratch to full production.
       </p>
     </div>
   );
 }
 
-function Skills() {
+function SkillList() {
+  const skilldata = SkillData;
+
   return (
     <div>
-      <ul></ul>
+      {skilldata.map((objData) => (
+        <Skills skill={objData.skill} emoji={objData.emoji} />
+      ))}
     </div>
   );
 }
 
-// function Skills(objData) {}?
+function Skills(props) {
+  return (
+    <div className="skill">
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
