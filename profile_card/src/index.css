@@ -18,6 +18,7 @@ code {
   background-color: black;
   margin: 30px;
   padding: 10px;
+  border-radius: 5px;
 }
 
 .info {
@@ -36,24 +37,32 @@ code {
 
 .intro h1 {
   font-weight: 100%;
+  margin-top:3px;
+}
+
+.intro {
+  align: justify;
+  margin-top:3px;
+}
+
+.skillList {
+  margin-bottom:10px;
 }
 
 .skillList li {
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 6px;
-
 }
 
 .skill {
-  width:85px;
-  height: 20px;
+  width:100px;
   background-color: gold;
   color: black;
   padding: 2px;
   border-radius: 3px;
-  margin-right: 12px; /* Adjust as needed for spacing */
-  margin-bottom: 6px;
+  margin-right: 12px;
+  margin-bottom:3px;
   word-wrap: break-word;
+  display: inline-block;
 }

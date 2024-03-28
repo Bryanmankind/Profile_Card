@@ -60,8 +60,8 @@ function Intro() {
     <div className="intro">
       <h1>Bryan Conquer</h1>
       <p>
-        I'm a Software Engineer Opt at mangaing development life cycle from
-        scratch to full production.
+      I am a software engineer adept at managing the entire software development life cycle, 
+      from requirement gathering to deployment and maintenance.
       </p>
     </div>
   );
