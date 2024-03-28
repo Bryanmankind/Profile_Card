@@ -12,8 +12,48 @@ code {
     monospace;
 }
 
+.container {
+  width: 350px;
+  height: 500px;
+  background-color: black;
+  margin: 30px;
+  padding: 10px;
+}
+
+.info {
+  color: white;
+  font-weight: 100%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 .profilePicture {
-  width: 12rem;
+  width: 350px;
+  height: 200px;
   aspect-ratio: 1;
   align-self: start;
+  border-radius: 5px;
+}
+
+.intro h1 {
+  font-weight: 100%;
+}
+
+.skillList li {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+
+}
+
+.skill {
+  width:85px;
+  height: 20px;
+  background-color: gold;
+  color: black;
+  padding: 2px;
+  border-radius: 3px;
+  margin-right: 12px; /* Adjust as needed for spacing */
+  margin-bottom: 6px;
+  word-wrap: break-word;
 }

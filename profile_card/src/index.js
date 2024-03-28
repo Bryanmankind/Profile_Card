@@ -37,7 +37,7 @@ function App() {
   return (
     <div className="container">
       <ProfilePicture />
-      <div>
+      <div className="info">
         <Intro />
         <SkillList />
       </div>
@@ -57,7 +57,7 @@ function ProfilePicture() {
 
 function Intro() {
   return (
-    <div>
+    <div className="intro">
       <h1>Bryan Conquer</h1>
       <p>
         I'm a Software Engineer Opt at mangaing development life cycle from
@@ -71,10 +71,13 @@ function SkillList() {
   const skilldata = SkillData;
 
   return (
-    <div>
+    <div className="skillList">
+      <h2>Tech Stack</h2>
+      <li>
       {skilldata.map((objData) => (
         <Skills skill={objData.skill} emoji={objData.emoji} />
       ))}
+      </li>
     </div>
   );
 }
