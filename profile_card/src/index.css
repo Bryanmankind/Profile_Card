@@ -41,7 +41,7 @@ code {
 }
 
 .intro {
-  align: justify;
+  text-align: justify;
   margin-top:3px;
 }
 
